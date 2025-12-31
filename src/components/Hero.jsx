@@ -1,4 +1,10 @@
-import { ChevronDown, Sparkle } from "lucide-react";
+import {
+  ArrowBigRight,
+  ArrowRight,
+  ChevronDown,
+  Play,
+  Sparkle,
+} from "lucide-react";
 import { useEffect, useState } from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { codeExamples, floatingCard } from "../data/codeExamples";
@@ -31,14 +37,51 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto text-center relative w-full">
         <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-8 sm:gap-12 items-center relative">
           <div className="">
-            <div className="inline-flex items-center space-x-2 px-3 sm:px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full mb-6 sm:mb-6 animate-fade-in-down animation-delay-200">
-              <Sparkle />
-              <span className="capitalize">introducing code flow ai</span>
+            <div className="inline-flex items-center space-x-2 px-3 sm:px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full mb-6 sm:mb-6 animate-in slide-in-from-bottom duration-300">
+              <Sparkle className="w-4 h-4 text-blue-400 " />
+              <span className="capitalize text-xs sm:text-sm text-blue-300">
+                introducing codeflow ai
+              </span>
+            </div>
+            <h1 className="text-5xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-300 capitalize delay-100 leading-tight">
+              <span className="bg-linear-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2 ">
+                code faster
+              </span>
+              <span className="bg-linear-to-b from-white via-blue-400 to-cyan-400 bg-clip-text text-transparent block mb-1 sm:mb-2">
+                build better
+              </span>
+              <span className="bg-linear-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2">
+                with codeflow ai
+              </span>
+            </h1>
+            <p className="text-md sm:text-base lg:text-lg text-gray-400 max-w-2xl mx-auto lg:mx-0 mb-6 sm:mb-8 animate-in slide-in-from-bottom duration-500 delay-200 leading-relaxed">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates repellat in facilis unde beatae doloribus, nobis fugiat
+              quas dicta? Esse laudantium officiis aperiam quasi cupiditate at,
+              autem nostrum illo rem nisi mollitia aliquid repudiandae aliquam
+              blanditiis amet ipsum, ipsam deserunt iste natus odio voluptas.
+              Omnis ratione adipisci harum aut recusandae?
+            </p>
+            <div
+              className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-8 sm:mb-12 animate-in 
+            slide-in-from-bottom "
+            >
+              <button className=" group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-linear-to-b from-blue-600 to-blue-400 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-102 flex items-center justify-center space-x-2 capitalize">
+                <span>start coding free</span>
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300" />
+              </button>
+
+              <button className=" group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover:bg-white/10 flex items-center justify-center space-x-2 capitalize">
+                <div className="p-2 bg-white/10 rounded-full group-hover:bg-white/20 duration-300 transition-colors">
+                  <Play className="w-4 h-4 sm:w-5 sm:h-5 fill-white" />
+                </div>
+                <span>watch demo</span>
+              </button>
             </div>
           </div>
           <div className=" relative order-2 w-full ">
             <div className="relative bg-white/5 backdrop-blur-xl rounded-xl sm:rounded-2xl p-3 sm:p-4 border border-white/10">
-              <div className="bg-linear-to-br from-gray-900/20 to-gray-800/20 backdrop-blur-sm rounded-lg overflow-hidden h-[250px] w-[350px] lg:h-[450px] ">
+              <div className="bg-linear-to-br from-gray-900/20 to-gray-800/20 backdrop-blur-sm rounded-lg overflow-hidden h-62.5 w-87.5 lg:h-112.5 w-full">
                 {/* ide header */}
                 <div className="flex items-center justify-between px-3 sm:px-4 py-2 sm:3 bg-white/5 backdrop-blur-sm border-b border-white/10">
                   <div className="flex items-center space-x-2">

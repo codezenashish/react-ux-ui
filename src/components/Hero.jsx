@@ -34,9 +34,9 @@ const Hero = () => {
       <div className="absolute top-20 left-4 sm:left-10 w-48 sm:w-72 h-48 sm:h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
       <div className="absolute bottom-20 right-4 sm:right-10 w-48 sm:w-72 h-48 sm:h-72 bg-cyan-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
 
-      <div className="max-w-7xl mx-auto text-center relative w-full">
+      <div className="max-w-7xl mx-auto  relative w-full">
         <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-8 sm:gap-12 items-center relative">
-          <div className="">
+          <div className="text-center lg:text-left order-1 lg:order-1">
             <div className="inline-flex items-center space-x-2 px-3 sm:px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full mb-6 sm:mb-6 animate-in slide-in-from-bottom duration-300">
               <Sparkle className="w-4 h-4 text-blue-400 " />
               <span className="capitalize text-xs sm:text-sm text-blue-300">

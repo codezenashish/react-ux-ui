@@ -1,6 +1,6 @@
 const Tastimonials = () => {
   return (
-    <div>Tastimonials</div>
+    <div></div>
   )
 }
 export default Tastimonials

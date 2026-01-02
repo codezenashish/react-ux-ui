@@ -23,7 +23,7 @@ const Hero = () => {
   }, []);
   const currentFloatingCard = floatingCard[activeTab];
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-4 pt-16 sm:px-6 sm:pt-20 lg:px-8">
       <div
         className="absolute inset-0 opacity-30"
         style={{
@@ -31,30 +31,30 @@ const Hero = () => {
         }}
       ></div>
 
-      <div className="absolute top-20 left-4 sm:left-10 w-48 sm:w-72 h-48 sm:h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-20 right-4 sm:right-10 w-48 sm:w-72 h-48 sm:h-72 bg-cyan-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+      <div className="absolute top-20 left-4 h-48 w-48 animate-pulse rounded-full bg-blue-500/10 blur-3xl sm:left-10 sm:h-72 sm:w-72"></div>
+      <div className="absolute right-4 bottom-20 h-48 w-48 animate-pulse rounded-full bg-cyan-500/10 blur-3xl delay-1000 sm:right-10 sm:h-72 sm:w-72"></div>
 
-      <div className="max-w-7xl mx-auto  relative w-full">
-        <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-8 sm:gap-12 items-center relative">
-          <div className="text-center lg:text-left order-1 lg:order-1">
-            <div className="inline-flex items-center space-x-2 px-3 sm:px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full mb-6 sm:mb-6 animate-in slide-in-from-bottom duration-300">
-              <Sparkle className="w-4 h-4 text-blue-400 " />
-              <span className="capitalize text-xs sm:text-sm text-blue-300">
+      <div className="relative mx-auto w-full max-w-7xl">
+        <div className="relative mx-auto flex max-w-7xl flex-col items-center gap-8 sm:gap-12 lg:grid lg:grid-cols-2">
+          <div className="order-1 text-center lg:order-1 lg:text-left">
+            <div className="animate-in slide-in-from-bottom mb-6 inline-flex items-center space-x-2 rounded-full border border-blue-500/20 bg-blue-500/10 px-3 py-2 duration-300 sm:mb-6 sm:px-4">
+              <Sparkle className="h-4 w-4 text-blue-400" />
+              <span className="text-xs text-blue-300 capitalize sm:text-sm">
                 introducing codeflow ai
               </span>
             </div>
-            <h1 className="text-5xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-300 capitalize delay-100 leading-tight">
-              <span className="bg-linear-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2 ">
+            <h1 className="animate-in slide-in-from-bottom mb-4 text-5xl leading-tight font-semibold capitalize delay-100 duration-300 sm:mb-6 sm:text-3xl md:text-4xl lg:text-5xl">
+              <span className="mb-1 block bg-linear-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent sm:mb-2">
                 code faster
               </span>
-              <span className="bg-linear-to-b from-white via-blue-400 to-cyan-400 bg-clip-text text-transparent block mb-1 sm:mb-2">
+              <span className="mb-1 block bg-linear-to-b from-white via-blue-400 to-cyan-400 bg-clip-text text-transparent sm:mb-2">
                 build better
               </span>
-              <span className="bg-linear-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2">
+              <span className="mb-1 block bg-linear-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent sm:mb-2">
                 with codeflow ai
               </span>
             </h1>
-            <p className="text-md sm:text-base lg:text-lg text-gray-400 max-w-2xl mx-auto lg:mx-0 mb-6 sm:mb-8 animate-in slide-in-from-bottom duration-500 delay-200 leading-relaxed">
+            <p className="text-md animate-in slide-in-from-bottom mx-auto mb-6 max-w-2xl leading-relaxed text-gray-400 delay-200 duration-500 sm:mb-8 sm:text-base lg:mx-0 lg:text-lg">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Voluptates repellat in facilis unde beatae doloribus, nobis fugiat
               quas dicta? Esse laudantium officiis aperiam quasi cupiditate at,
@@ -62,76 +62,73 @@ const Hero = () => {
               blanditiis amet ipsum, ipsam deserunt iste natus odio voluptas.
               Omnis ratione adipisci harum aut recusandae?
             </p>
-            <div
-              className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-8 sm:mb-12 animate-in 
-            slide-in-from-bottom "
-            >
-              <button className=" group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-linear-to-b from-blue-600 to-blue-400 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-102 flex items-center justify-center space-x-2 capitalize">
+            <div className="animate-in slide-in-from-bottom mb-8 flex flex-col items-center justify-center gap-3 sm:mb-12 sm:flex-row sm:gap-4 lg:justify-start">
+              <button className="group flex w-full items-center justify-center space-x-2 rounded-lg bg-linear-to-b from-blue-600 to-blue-400 px-6 py-3 text-sm font-semibold capitalize transition-all duration-300 hover:scale-102 sm:w-auto sm:px-8 sm:py-4 sm:text-base">
                 <span>start coding free</span>
-                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 sm:h-5 sm:w-5" />
               </button>
 
-              <button className=" group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover:bg-white/10 flex items-center justify-center space-x-2 capitalize">
-                <div className="p-2 bg-white/10 rounded-full group-hover:bg-white/20 duration-300 transition-colors">
-                  <Play className="w-4 h-4 sm:w-5 sm:h-5 fill-white" />
+              <button className="group flex w-full items-center justify-center space-x-2 rounded-lg border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold capitalize backdrop-blur-sm transition-all duration-300 hover:bg-white/10 sm:w-auto sm:px-8 sm:py-4 sm:text-base">
+                <div className="rounded-full bg-white/10 p-2 transition-colors duration-300 group-hover:bg-white/20">
+                  <Play className="h-4 w-4 fill-white sm:h-5 sm:w-5" />
                 </div>
                 <span>watch demo</span>
               </button>
             </div>
           </div>
-          <div className=" relative order-2 w-full ">
-            <div className="relative bg-white/5 backdrop-blur-xl rounded-xl sm:rounded-2xl p-3 sm:p-4 border border-white/10">
-              <div className="bg-linear-to-br from-gray-900/20 to-gray-800/20 backdrop-blur-sm rounded-lg overflow-hidden h-62.5 w-87.5 lg:h-112.5 w-full">
+          <div className="relative order-2 w-full">
+            <div className="relative rounded-xl border border-white/10 bg-white/5 p-3 backdrop-blur-xl sm:rounded-2xl sm:p-4">
+              <div className="h-62.5 w-87.5 w-full overflow-hidden rounded-lg bg-linear-to-br from-gray-900/20 to-gray-800/20 backdrop-blur-sm lg:h-112.5">
                 {/* ide header */}
-                <div className="flex items-center justify-between px-3 sm:px-4 py-2 sm:3 bg-white/5 backdrop-blur-sm border-b border-white/10">
+                <div className="sm:3 flex items-center justify-between border-b border-white/10 bg-white/5 px-3 py-2 backdrop-blur-sm sm:px-4">
                   <div className="flex items-center space-x-2">
                     <div className="flex items-center space-x-1 sm:space-x-2">
-                      <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-red-500 "></div>
-                      <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-yellow-500 "></div>
-                      <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-green-500 "></div>
+                      <div className="h-2 w-2 rounded-full bg-red-500 sm:h-3 sm:w-3"></div>
+                      <div className="h-2 w-2 rounded-full bg-yellow-500 sm:h-3 sm:w-3"></div>
+                      <div className="h-2 w-2 rounded-full bg-green-500 sm:h-3 sm:w-3"></div>
                     </div>
-                    <span className="text-xs sm:text-sm text-gray-300 capitalize">
+                    <span className="text-xs text-gray-300 capitalize sm:text-sm">
                       code flow Ai
                     </span>
                   </div>
-                  <ChevronDown className="w-3 h-3 sm:w-4 sm:h-4 text-gray-400" />
+                  <ChevronDown className="h-3 w-3 text-gray-400 sm:h-4 sm:w-4" />
                 </div>
-                <div className="p-3 sm:p-4  relative h-full">
+                <div className="relative h-full p-3 sm:p-4">
                   {/* files tab */}
-                  <div className=" flex space-x-1 mb-3 sm:mb-4 overflow-hidden">
+                  <div className="mb-3 flex space-x-1 overflow-hidden sm:mb-4">
                     <button
                       onClick={() => setActiveTab("App.jsx")}
-                      className={`px-3 py-2 backdrop-blur-sm text-xs sm:text-sm rounded-t-lg border ${
+                      className={`rounded-t-lg border px-3 py-2 text-xs backdrop-blur-sm sm:text-sm ${
                         activeTab === "App.jsx"
-                          ? "bg-blue-500/30 text-white border-blue-40"
-                          : "bg-white/5 text-gray-300 border-white/10 hover:bg-white/10"
-                      } text-gray-300 transition-all duration-200 whitespace-nowrap`}
+                          ? "border-blue-40 bg-blue-500/30 text-white"
+                          : "border-white/10 bg-white/5 text-gray-300 hover:bg-white/10"
+                      } whitespace-nowrap text-gray-300 transition-all duration-200`}
                     >
                       App.jsx
                     </button>
                     <button
                       onClick={() => setActiveTab("Hero.jsx")}
-                      className={`px-3 py-2 backdrop-blur-sm text-xs sm:text-sm rounded-t-lg border ${
+                      className={`rounded-t-lg border px-3 py-2 text-xs backdrop-blur-sm sm:text-sm ${
                         activeTab === "Hero.jsx"
-                          ? "bg-blue-500/30 text-white border-blue-40"
-                          : "bg-white/5 text-gray-300 border-white/10 hover:bg-white/10"
-                      } text-gray-300 transition-all duration-200 whitespace-nowrap`}
+                          ? "border-blue-40 bg-blue-500/30 text-white"
+                          : "border-white/10 bg-white/5 text-gray-300 hover:bg-white/10"
+                      } whitespace-nowrap text-gray-300 transition-all duration-200`}
                     >
                       Hero.jsx
                     </button>
                     <button
                       onClick={() => setActiveTab("Navbar.jsx")}
-                      className={`px-3 py-2 backdrop-blur-sm text-xs sm:text-sm rounded-t-lg border ${
+                      className={`rounded-t-lg border px-3 py-2 text-xs backdrop-blur-sm sm:text-sm ${
                         activeTab === "Navbar.jsx"
-                          ? "bg-blue-500/30 text-white border-blue-40"
-                          : "bg-white/5 text-gray-300 border-white/10 hover:bg-white/10"
-                      } text-gray-300 transition-all duration-200 whitespace-nowrap`}
+                          ? "border-blue-40 bg-blue-500/30 text-white"
+                          : "border-white/10 bg-white/5 text-gray-300 hover:bg-white/10"
+                      } whitespace-nowrap text-gray-300 transition-all duration-200`}
                     >
                       Navbar.jsx
                     </button>
                   </div>
                   {/* code content */}
-                  <div className="relative overflow-hidden grow">
+                  <div className="relative grow overflow-hidden">
                     <SyntaxHighlighter
                       language="javascript"
                       style={nightOwl}
@@ -150,11 +147,11 @@ const Hero = () => {
               </div>
               {/* floating card */}
               <div
-                className={`hidden lg:block absolute bottom-4 right-4 transform-x-8 translate-y-8 w-72 ${currentFloatingCard.bgColor} backdrop-blur-xl rounded-lg p-4 border border-white/20 shadow-2xl  `}
+                className={`transform-x-8 absolute right-4 bottom-4 hidden w-72 translate-y-8 lg:block ${currentFloatingCard.bgColor} rounded-lg border border-white/20 p-4 shadow-2xl backdrop-blur-xl`}
               >
-                <div className="flex items-center space-x-2 mb-2">
+                <div className="mb-2 flex items-center space-x-2">
                   <div
-                    className={`w-6 h-6 ${currentFloatingCard.iconColor} flex items-center justify-center text-sm font-bold`}
+                    className={`h-6 w-6 ${currentFloatingCard.iconColor} flex items-center justify-center text-sm font-bold`}
                   >
                     {currentFloatingCard.icon}
                   </div>

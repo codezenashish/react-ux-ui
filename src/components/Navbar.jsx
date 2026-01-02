@@ -10,7 +10,7 @@ const Navbar = () => {
           <div className="group flex cursor-pointer items-center space-x-1">
             <div>
               <img
-                className="h-6 w-6 sm:h-8 sm:w-8"
+                className="h-6 w-6 transition-all duration-300 hover:scale-105 sm:h-8 sm:w-8"
                 src="/public/logo.png"
                 alt="codingIcon"
               />
